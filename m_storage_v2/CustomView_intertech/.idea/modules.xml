@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CustomView_intertech.iml" filepath="$PROJECT_DIR$/CustomView_intertech.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/clientuser_animation/clientuser_animation.iml" filepath="$PROJECT_DIR$/clientuser_animation/clientuser_animation.iml" />
       <module fileurl="file://$PROJECT_DIR$/coderzgeek/coderzgeek.iml" filepath="$PROJECT_DIR$/coderzgeek/coderzgeek.iml" />
       <module fileurl="file://$PROJECT_DIR$/mycustomviews/mycustomviews.iml" filepath="$PROJECT_DIR$/mycustomviews/mycustomviews.iml" />
     </modules>
