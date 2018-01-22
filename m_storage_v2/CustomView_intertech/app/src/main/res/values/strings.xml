@@ -3,4 +3,5 @@
 
     <string name="valueSelector_label">VALUE</string>
     <string name="valueBarLabel">CURRENT VALUE</string>
+    <string name="title_activity_main">MainActivity</string>
 </resources>

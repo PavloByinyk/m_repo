@@ -1,4 +1,4 @@
-package com.example.gottgried.customview_intertech.custom_view.custom_counter.custom_progresbar;
+package com.example.gottgried.customview_intertech.custom_progresbar;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.example.gottgried.customview_intertech.custom_view.custom_counter.custom_progresbar.CustomProgresBar
+    <com.example.gottgried.customview_intertech.custom_progresbar.CustomProgresBar
         android:id="@+id/valueBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

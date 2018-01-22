@@ -1,4 +1,4 @@
-package com.example.gottgried.customview_intertech.custom_view.custom_counter;
+package com.example.gottgried.customview_intertech.custom_counter;
 
 import android.content.Context;
 import android.os.Handler;

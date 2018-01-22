@@ -1,4 +1,4 @@
-package com.example.gottgried.customview_intertech.custom_view.custom_counter;
+package com.example.gottgried.customview_intertech.custom_counter;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
