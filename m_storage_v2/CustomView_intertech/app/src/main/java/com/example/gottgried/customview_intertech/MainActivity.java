@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 
 import com.example.gottgried.clientuser_animation.cunvas_and_views.AnimationActivity;
+import com.example.gottgried.clientuser_animation.cunvas_and_views.AnimationActivity2;
 import com.example.gottgried.coderzgeek.custom_shapes.ShapesActivity;
 import com.example.gottgried.customview_intertech.custom_counter.CounterActivity;
 import com.example.gottgried.customview_intertech.custom_progresbar.ProgresBarActivity;
@@ -71,6 +72,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         listActivity.add(ProgresBarActivity.class);
         listActivity.add(ShapesActivity.class);
         listActivity.add(AnimationActivity.class);
+        listActivity.add(AnimationActivity2.class);
 
         return listActivity;
     }
