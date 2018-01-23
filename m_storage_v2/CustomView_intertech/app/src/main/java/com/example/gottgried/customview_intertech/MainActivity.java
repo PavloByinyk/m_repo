@@ -14,6 +14,8 @@ import android.widget.LinearLayout;
 
 import com.example.gottgried.clientuser_animation.cunvas_and_views.AnimationActivity;
 import com.example.gottgried.clientuser_animation.cunvas_and_views.AnimationActivity2;
+import com.example.gottgried.coderzgeek.custom_imageview.ImageViewActivity;
+import com.example.gottgried.coderzgeek.custom_imageview_animation.AnimateImageViewActivity;
 import com.example.gottgried.coderzgeek.custom_shapes.ShapesActivity;
 import com.example.gottgried.customview_intertech.custom_counter.CounterActivity;
 import com.example.gottgried.customview_intertech.custom_progresbar.ProgresBarActivity;
@@ -21,7 +23,6 @@ import com.example.gottgried.customview_intertech.custom_progresbar.ProgresBarAc
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
-import java.util.zip.Inflater;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -73,6 +74,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         listActivity.add(ShapesActivity.class);
         listActivity.add(AnimationActivity.class);
         listActivity.add(AnimationActivity2.class);
+        listActivity.add(ImageViewActivity.class);
+        listActivity.add(AnimateImageViewActivity.class);
 
         return listActivity;
     }
