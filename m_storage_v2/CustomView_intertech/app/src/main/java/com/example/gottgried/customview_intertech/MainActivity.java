@@ -17,6 +17,7 @@ import com.example.gottgried.clientuser_animation.cunvas_and_views.AnimationActi
 import com.example.gottgried.coderzgeek.custom_imageview.ImageViewActivity;
 import com.example.gottgried.coderzgeek.custom_imageview_animation.AnimateImageViewActivity;
 import com.example.gottgried.coderzgeek.custom_shapes.ShapesActivity;
+import com.example.gottgried.coderzgeek.custom_slide_to_unlock.SliderViewActivity;
 import com.example.gottgried.customview_intertech.custom_counter.CounterActivity;
 import com.example.gottgried.customview_intertech.custom_progresbar.ProgresBarActivity;
 
@@ -76,6 +77,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         listActivity.add(AnimationActivity2.class);
         listActivity.add(ImageViewActivity.class);
         listActivity.add(AnimateImageViewActivity.class);
+        listActivity.add(SliderViewActivity.class);
 
         return listActivity;
     }

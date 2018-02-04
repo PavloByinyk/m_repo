@@ -11,7 +11,8 @@
         android:theme="@style/AppTheme">
         <activity android:name=".custom_shapes.ShapesActivity" />
         <activity android:name=".custom_imageview.ImageViewActivity" />
-        <activity android:name=".custom_imageview_animation.AnimateImageViewActivity"></activity>
+        <activity android:name=".custom_imageview_animation.AnimateImageViewActivity" />
+        <activity android:name=".custom_slide_to_unlock.SliderViewActivity"></activity>
     </application>
 
 </manifest>
