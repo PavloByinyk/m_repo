@@ -1,5 +1,6 @@
 package com.example.gottgried.rxdagger2_maps.api;
 
+import com.example.gottgried.rxdagger2_maps.pojo.MapsResponse;
 import com.example.gottgried.rxdagger2_maps.pojo.Result;
 
 import java.util.List;
@@ -14,6 +15,6 @@ import rx.Observable;
 public interface MapApiService {
 
     @GET("/response.json")
-    Observable<List<Result>> getMaps();
+    Observable<MapsResponse> getMaps();
 
 }

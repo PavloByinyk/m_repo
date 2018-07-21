@@ -2,6 +2,8 @@ package com.example.gottgried.rxdagger2_maps.di.application;
 
 import android.content.Context;
 
+import com.example.gottgried.rxdagger2_maps.di.scope.PerApplication;
+
 import java.util.concurrent.TimeUnit;
 
 import javax.inject.Named;
@@ -18,7 +20,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
  * Created by Gottgried on 26.06.2018.
  */
 
-@Singleton
+@PerApplication
 @Module
 public class ApplicationModule {
 
@@ -30,15 +32,15 @@ public class ApplicationModule {
         mBaseUrl = baseUrl;
     }
 
-    @Singleton
+    @PerApplication
     @Provides
     GsonConverterFactory provideGsonConverterFactory() {
         return GsonConverterFactory.create();
     }
 
-    @Singleton
+    @PerApplication
     @Provides
-    //@Named("ok-1")
+    @Named("ok-1")
     OkHttpClient provideOkHttpClient1() {
         return new OkHttpClient.Builder()
                 .connectTimeout(20, TimeUnit.SECONDS)
@@ -46,7 +48,7 @@ public class ApplicationModule {
                 .build();
     }
 
-    @Singleton
+    @PerApplication
     @Provides
     //@Named("ok-2")
     OkHttpClient provideOkHttpClient2() {
@@ -56,13 +58,13 @@ public class ApplicationModule {
                 .build();
     }
 
-    @Singleton
+    @PerApplication
     @Provides
     RxJavaCallAdapterFactory provideRxJavaCallAdapterFactory() {
         return RxJavaCallAdapterFactory.create();
     }
 
-    @Singleton
+    @PerApplication
     @Provides
     Retrofit provideRetrofit(@Named("ok-1") OkHttpClient client, GsonConverterFactory converterFactory, RxJavaCallAdapterFactory adapterFactory) {
         return new Retrofit.Builder()
@@ -74,7 +76,7 @@ public class ApplicationModule {
     }
 
     @Provides
-    @Singleton
+    @PerApplication
     Context provideContext() {
         return mContext;
     }

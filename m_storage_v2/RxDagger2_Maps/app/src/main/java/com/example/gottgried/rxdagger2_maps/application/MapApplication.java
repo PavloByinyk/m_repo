@@ -2,6 +2,8 @@ package com.example.gottgried.rxdagger2_maps.application;
 
 import android.app.Application;
 
+import com.example.gottgried.rxdagger2_maps.di.application.ApplicationComponent;
+import com.example.gottgried.rxdagger2_maps.di.application.ApplicationModule;
 import com.example.gottgried.rxdagger2_maps.di.application.DaggerApplicationComponent;
 
 
@@ -11,14 +13,24 @@ import com.example.gottgried.rxdagger2_maps.di.application.DaggerApplicationComp
 
 public class MapApplication extends Application {
 
+
+    private ApplicationComponent mApplicationComponent;
+
     @Override
     public void onCreate() {
         super.onCreate();
-        initializeAppComponent();
+        initializeApplicationComponent();
     }
 
-    private void initializeAppComponent() {
-        DaggerApplicationComponent.builder().build();
+    private void initializeApplicationComponent() {
+        mApplicationComponent = DaggerApplicationComponent
+                .builder()
+                .applicationModule(new ApplicationModule(this, "https://gist.githubusercontent.com"))
+                .build();
+    }
+
+    public ApplicationComponent getApplicationComponent() {
+        return mApplicationComponent;
     }
 
     @Override

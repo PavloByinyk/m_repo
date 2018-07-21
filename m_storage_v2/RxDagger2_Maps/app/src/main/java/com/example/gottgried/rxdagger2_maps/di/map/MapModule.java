@@ -3,6 +3,8 @@ package com.example.gottgried.rxdagger2_maps.di.map;
 import com.example.gottgried.rxdagger2_maps.api.MapApiService;
 import com.example.gottgried.rxdagger2_maps.base.mvp.IBaseView;
 import com.example.gottgried.rxdagger2_maps.di.scope.PerActivity;
+import com.example.gottgried.rxdagger2_maps.modules.home.IMapContract;
+import com.example.gottgried.rxdagger2_maps.modules.home.MapPresenter;
 
 import dagger.Module;
 import dagger.Provides;
@@ -16,9 +18,9 @@ import retrofit2.Retrofit;
 @Module
 public class MapModule {
 
-    private IBaseView mView;
+    public IMapContract.IView mView;
 
-    public MapModule(IBaseView mView) {
+    public MapModule(IMapContract.IView mView) {
         this.mView = mView;
     }
 
@@ -31,7 +33,13 @@ public class MapModule {
 
     @PerActivity
     @Provides
-    IBaseView provideIBaseView() {
+    IMapContract.IView provideIBaseView() {
         return mView;
+    }
+
+    @PerActivity
+    @Provides
+    MapPresenter provideMapPresenter(){
+        return  new MapPresenter();
     }
 }
